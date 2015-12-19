@@ -26,7 +26,7 @@ import org.springframework.webflow.execution.RequestContext;
  * 
  * @see org.springframework.webflow.engine.Transition
  * @see org.springframework.webflow.engine.TransitionCriteria
- * occurrence
+ * 
  * @author Keith Donald
  * @author Erwin Vervaet
  */
