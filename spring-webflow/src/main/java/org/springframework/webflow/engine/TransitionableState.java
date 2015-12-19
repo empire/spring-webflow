@@ -26,7 +26,7 @@ import org.springframework.webflow.execution.RequestContext;
  * 
  * @see org.springframework.webflow.engine.Transition
  * @see org.springframework.webflow.engine.TransitionCriteria
- * 
+ * occurrence
  * @author Keith Donald
  * @author Erwin Vervaet
  */
@@ -88,7 +88,7 @@ public abstract class TransitionableState extends State implements Transitionabl
 		Transition transition = getTransitionSet().getTransition(context);
 		if (transition == null) {
 			throw new NoMatchingTransitionException(getFlow().getId(), getId(), context.getCurrentEvent(),
-					"No transition found on occurence of event '" + context.getCurrentEvent() + "' in state '"
+					"No transition found on occurrence of event '" + context.getCurrentEvent() + "' in state '"
 							+ getId() + "' of flow '" + getFlow().getId() + "' -- valid transitional criteria are "
 							+ StylerUtils.style(getTransitionSet().getTransitionCriterias())
 							+ " -- likely programmer error, check the set of TransitionCriteria for this state");
